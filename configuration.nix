@@ -9,9 +9,12 @@
 
 	];
 
-    # Bootloader.
-    boot.loader.systemd-boot.enable = true;
-    boot.loader.efi.canTouchEfiVariables = true;
+    # bootloader
+    boot.loader.grub = {
+	enable = true;
+	useOSProber = true;
+	device = "/dev/sda";
+    };
 
     # kernel
     boot.kernelPackages = pkgs.linuxPackages_latest;
