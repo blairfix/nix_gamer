@@ -20,7 +20,7 @@
     boot.kernelPackages = pkgs.linuxPackages_latest;
 
     # host
-    networking.hostName = "petra-laptop"; 
+    networking.hostName = "gamer"; 
 
     # networking
     networking.networkmanager.enable = true;
