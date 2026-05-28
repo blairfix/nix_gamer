@@ -6,6 +6,8 @@
 	[ 
 	# include
 	./hardware-configuration.nix
+	./borg_gamer.nix
+	./borg_gamer_nas.nix
 
 	];
 
